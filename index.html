@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Yan</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 40px;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: 0;
+      border-radius: 6px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 id="message">Hello Yan</h1>
+    <button id="changeTextButton" type="button">Click me</button>
+  </main>
+
+  <script>
+    const message = document.getElementById('message');
+    const button = document.getElementById('changeTextButton');
+
+    button.addEventListener('click', () => {
+      message.textContent = 'Codex works';
+    });
+  </script>
+</body>
+</html>
